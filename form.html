@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+</head>
+<body>
+
+    <h2>Application Form</h2>
+
+    <form action="#" method="post">
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"><br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob"><br><br>
+
+        <label>Gender:</label><br>
+        <select name="gender">
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="3" cols="30"></textarea><br><br>
+
+        <label>Upload Resume:</label><br>
+        <input type="file" name="resume"><br><br>
+
+        <label>Why are you applying?</label><br>
+        <textarea name="message" rows="4" cols="30" required></textarea><br><br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+
+</body>
+</html>

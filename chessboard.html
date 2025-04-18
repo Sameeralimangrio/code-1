@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board with Pieces</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            gap: 0;
+            border: 2px solid #333;
+        }
+
+        .chessboard div {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+
+        .chessboard .light {
+            background-color: #f0d9b5;
+        }
+
+        .chessboard .dark {
+            background-color: #b58863;
+        }
+
+        .piece {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chessboard">
+        
+        <div class="dark piece">♜</div><div class="light piece">♞</div><div class="dark piece">♝</div><div class="light piece">♛</div>
+        <div class="dark piece">♚</div><div class="light piece">♝</div><div class="dark piece">♞</div><div class="light piece">♜</div>
+
+        
+        <div class="light piece">♟</div><div class="dark piece">♟</div><div class="light piece">♟</div><div class="dark piece">♟</div>
+        <div class="light piece">♟</div><div class="dark piece">♟</div><div class="light piece">♟</div><div class="dark piece">♟</div>
+
+        
+        <div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div>
+        <div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div>
+
+        
+        <div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div>
+        <div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div>
+
+        
+        <div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div>
+        <div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div>
+
+        
+        <div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div>
+        <div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div>
+
+        <div class="dark piece">♙</div><div class="light piece">♙</div><div class="dark piece">♙</div><div class="light piece">♙</div>
+        <div class="dark piece">♙</div><div class="light piece">♙</div><div class="dark piece">♙</div><div class="light piece">♙</div>
+
+        <div class="light piece">♖</div><div class="dark piece">♘</div><div class="light piece">♗</div><div class="dark piece">♕</div>
+        <div class="light piece">♔</div><div class="dark piece">♗</div><div class="light piece">♘</div><div class="dark piece">♖</div>
+    </div>
+
+</body>
+</html>
